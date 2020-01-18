@@ -10,6 +10,8 @@ categories:
 
 Docker 是一个应用容器引擎，可以将应用运行时环境打包到一个容器中，打包后的容器可移植到任何一个 Linux 环境下运行，能有效避免繁琐的配置步骤，下面是使用 Docker 搭建 WordPress 博客的具体操作。
 
+<!-- more -->
+
 ## 安装 Docker
 
 以 Ubuntu 为例，安装 Docker 执行：
