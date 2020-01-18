@@ -12,8 +12,6 @@ categories:
 
 <!-- more -->
 
-## 安装
-
 Ubuntu 下安装 Docker 执行：
 ``` bash
 sudo apt-get install docker.io
