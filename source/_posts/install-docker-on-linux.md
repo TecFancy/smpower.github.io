@@ -8,8 +8,6 @@ categories:
   - Docker
 ---
 
-![Docker](https://ruofei.oss-cn-qingdao.aliyuncs.com/github.ruofei.site/docker.jfif)
-
 安装 Docker 非常简单。任何一门编程语言，我们都是从 Hello World 开始，这里，我们的首要目标就是先把 Docker 跑起来。下面以 Ubuntu 为例看看我们是如何把 Docker 跑起来的。
 
 <!-- more -->
