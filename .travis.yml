@@ -3,29 +3,39 @@ sudo: false
  
 language: node_js
 node_js:
-  - "12.14.0"
+  - lts/*
 
 branches:
   only:
-    - hexo                # 只监测 hexo 分支上的 commit
+    - hexo # 只监测 hexo 分支上的 commit
  
 cache:
   directories:
      - ./node_modules
 
 before_install:
-- npm i -g hexo-cli # 安装 hexo
+  - npm i -g hexo-cli # 全局安装 hexo
  
 install:
   - npm i # 安装 package.json 中的依赖包
 
-script:
-  - git submodule init # 更新子模块(一般用于主题)
+before_script:
+  - git submodule init # 更新子模块
   - git submodule update
-  - hexo clean
-  - hexo generate
 
-after_success:
-  - git config --global user.name "ruofei"
+script:
+  - hexo clean
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config --global user.name "smpower"
   - git config --global user.email "rf.wangchn@gmail.com"
-  - hexo deploy
+  - git add .
+  - git commit -m "Updated blog by Travis-CI."
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master # 发布到 master 分支
+
+env:
+  global:
+    - GH_REF: github.com/smpower/smpower.github.io.git
