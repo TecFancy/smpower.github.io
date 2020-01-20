@@ -1,7 +1,14 @@
 version: 2
 jobs:
-  build:
-    working_directory: ~/blog-frame
+  clean: # 执行清理操作
+    working_directory: ~/blog
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - checkout
+      - run: npm run clean
+  build: # 编译
+    working_directory: ~/blog
     docker:
       - image: circleci/node:12-browsers
     steps:
@@ -13,5 +20,30 @@ jobs:
           key: my-project-{{ .Branch }}-{{ checksum "package-lock.json" }}
           paths:
             - 'node_modules'
-      - run: npm run clean && npm run build && npm run deploy -- --no-watch --no-progress --browsers=ChromeHeadlessCI
+      - run: npm generate
+  deploy: # 打包
+    working_directory: ~/blog
+    docker:
+      - image: circleci/node:12-browsers
+    steps:
+      - checkout
+      - run: npm run deploy
       
+workflows:
+  version: 2
+  jobs:
+    - clean:
+      filters:
+        branches:
+          only: # 只对 hexo 分支进行 clean
+            - hexo
+    - generate:
+      filters:
+        branches:
+          only:
+            - hexo
+    - build:
+      filters:
+        branches:
+          only:
+            - hexo
