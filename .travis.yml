@@ -22,7 +22,8 @@ install:
 script:
   - git submodule init # 更新子模块(一般用于主题)
   - git submodule update
-  - hexo clean && hexo generate
+  - hexo clean
+  - hexo generate
 
 after_success:
   - git config --global user.name "ruofei"
