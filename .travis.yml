@@ -1,0 +1,30 @@
+dist: trusty
+sudo: false
+ 
+language: node_js
+node_js:
+  - "12.14.0"
+
+branches:
+  only:
+    - hexo                # 只监测 hexo 分支上的 commit
+ 
+cache:
+  directories:
+     - ./node_modules
+
+before_install:
+- npm i -g hexo-cli # 安装 hexo
+ 
+install:
+  - npm i # 安装 package.json 中的依赖包
+
+script:
+  - git submodule init # 更新子模块(一般用于主题)
+  - git submodule update
+  - hexo clean && hexo generate
+
+after_success:
+  - git config --global user.name "ruofei"
+  - git config --global user.email "rf.wangchn@gmail.com"
+  - hexo deploy

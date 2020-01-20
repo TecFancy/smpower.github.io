@@ -6,6 +6,7 @@ jobs:
       - image: circleci/node:12-browsers
     steps:
       - checkout
+      - run: npm i -g hexo-cli
       - run: npm run clean
   build: # 编译
     working_directory: ~/blog
