@@ -21,14 +21,14 @@ categories:
 
 给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。
 
-> 示例:
-> 输入: "Let's take LeetCode contest"
-> 输出: "s'teL ekat edoCteeL tsetnoc" 
-> 注意：在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。
+示例:
+输入: `"Let's take LeetCode contest"`
+输出: `"s'teL ekat edoCteeL tsetnoc"`
+注意：在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。
 
 ## 题解
 
-JavaScript 没有提供颠倒字符串的能力，只有一个数组方法 reverse() 可以颠倒数组元素的位置。比如，现有数组 arr 为 ['a', 'b', 'c']，应用 reverse() 方法后得到：
+JavaScript 没有提供颠倒字符串的能力，只有一个数组方法 `reverse()` 可以颠倒数组元素的位置。比如，现有数组 `arr` 为 `['a', 'b', 'c']`，应用 `reverse()` 方法后得到：
 
 ``` JavaScript
 const arr = ['a', 'b', 'c'];
@@ -36,7 +36,7 @@ const result = arr.reverse();
 console.log(result); // ['c', 'b', 'a']
 ```
 
-利用 JavaScript 提供的字符串方法 split() 可以将一个字符串分割成以指定分隔符分隔的数组。下例，将一字符串分割成以字母为数组元素的数组：
+利用 JavaScript 提供的字符串方法 `split()` 可以将一个字符串分割成以指定分隔符分隔的数组。下例，将一字符串分割成以字母为数组元素的数组：
 
 ``` JavaScript
 const str = 'Welcome';
@@ -44,7 +44,7 @@ const resultArr = str.split('');
 console.log(resultArr); // ['W', 'e', 'l', 'c', 'o', 'm', 'e']
 ```
 
-将 resultArr 中数组元素颠倒位置后，再拼接为字符串，即可实现字符串的位置颠倒：
+将 `resultArr` 中数组元素颠倒位置后，再拼接为字符串，即可实现字符串的位置颠倒：
 
 ``` JavaScript
 const reversedArr = resultArr.reverse(); // 得到颠倒后的数组
@@ -52,7 +52,7 @@ const reversedStr = reversedArr.join(''); // 得到颠倒后的字符串
 console.log(reversedStr); // 'emocleW'
 ```
 
-根据上面的思路，先将字符串 "Let's take LeetCode contest" 分割成以单词为单位的数组，再把数组中每个单词分割成以字母为数组元素的数组并执行颠倒操作，将颠倒后的数组拼接为字符串，这时得到了颠倒后的单词。最后，将单词拼接为字符串，便得到了颠倒后的字符串 "s'teL ekat edoCteeL tsetnoc"。实现如下：
+根据上面的思路，先将字符串 `"Let's take LeetCode contest"` 分割成以单词为单位的数组，再把数组中每个单词分割成以字母为数组元素的数组并执行颠倒操作，将颠倒后的数组拼接为字符串，这时得到了颠倒后的单词。最后，将单词拼接为字符串，便得到了颠倒后的字符串 `"s'teL ekat edoCteeL tsetnoc"`。实现如下：
 
 ``` JavaScript
 /**
