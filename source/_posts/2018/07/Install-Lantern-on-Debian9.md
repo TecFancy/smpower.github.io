@@ -1,12 +1,13 @@
 ---
 title: Install Lantern on Debian9
-date: 2018-07-05 16:08:01
 tags:
   - Linux
   - Debian9
   - Lantern
 categories:
   - 笔记
+abbrlink: 8cb8163
+date: 2018-07-05 16:08:01
 ---
 
 Step 1: Down the lantern-installer-64-bit.deb

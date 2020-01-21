@@ -1,10 +1,11 @@
 ---
 title: 反转字符串中的单词
-date: 2020-01-20 17:09:07
 tags:
   - 算法
 categories:
   - JavaScript
+abbrlink: a669b1a7
+date: 2020-01-20 17:09:07
 ---
 
 ## 预备知识

@@ -1,11 +1,12 @@
 ---
 title: 使用 Docker 部署 WorkPress
-date: 2020-01-19 02:17:46
 tags:
   - Docker
   - WordPress
 categories:
   - Docker
+abbrlink: 11d50f65
+date: 2020-01-19 02:17:46
 ---
 
 Docker 是一个应用容器引擎，可以将应用运行时环境打包到一个容器中，打包后的容器可移植到任何一个 Linux 环境下运行，能有效避免繁琐的配置步骤，下面是使用 Docker 搭建 WordPress 博客的具体操作。

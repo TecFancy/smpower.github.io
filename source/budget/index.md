@@ -12,3 +12,11 @@ password: 1115
 **选项卡 2**
 <!-- endtab -->
 {% endtabs %}
+
+{% mermaid graph TD %}
+A[Christmas] -->|Get money| B(Go shopping)
+B --> C{Let me thinksssss<br>ssssssssssssssssssssss<br>sssssssssssssssssssssssssss}
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+C -->|Three| F[Car]
+{% endmermaid %}
