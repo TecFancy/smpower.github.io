@@ -1,7 +1,10 @@
 # hexo robots.txt
 User-agent: *
 Allow: /
+Allow: /post/
 Allow: /archives/
+Allow: /tag/
+Allow: /programming/
 
 Disallow: /vendors/
 Disallow: /js/
@@ -10,3 +13,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 Disallow: /lib/
+Disallow: /work/
+Disallow: /budge/

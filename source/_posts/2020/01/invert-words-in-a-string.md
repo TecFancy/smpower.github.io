@@ -6,15 +6,16 @@ categories:
   - JavaScript
 abbrlink: a669b1a7
 date: 2020-01-20 17:09:07
+isShow: true
 ---
 
 ## 预备知识
 
-1. String.prototype.split
-2. String.prototype.match
-3. Array.prototype.map
-4. Array.prototype.reverse
-5. Array.prototype.join
+1. [[TODO] String.prototype.split](/post/361f1e2a/)
+2. [[TODO] String.prototype.match](/post/fdb1413e/)
+3. [[TODO] Array.prototype.map](/post/1160b0b5/)
+4. [[TODO] Array.prototype.reverse](/post/26fb8b8d/)
+5. [[TODO ]Array.prototype.join](/post/cf5b38ca/)
 
 <!-- more -->
 
