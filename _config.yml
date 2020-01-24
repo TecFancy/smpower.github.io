@@ -107,6 +107,12 @@ abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
 
+symbols_count_time:
+  symbols: true # 统计单篇文章字数
+  time: false # 取消估算单篇文章阅读时间
+  total_symbols: true # 统计站点总字数
+  total_time: false # 取消估算站点总阅读时间
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
