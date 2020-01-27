@@ -1,6 +1,6 @@
 ---
 title: Angular 组件与模板：显示数据
-comments: false
+comments: true
 abbrlink: 92bfa88f
 date: 2020-01-27 16:46:25
 tags:
