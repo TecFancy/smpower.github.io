@@ -11,11 +11,11 @@ comments: true
 
 ## 预备知识
 
-1. [[TODO] String.prototype.split()](/post/361f1e2a/)
-2. [[TODO] String.prototype.match()](/post/fdb1413e/)
-3. [[TODO] Array.prototype.map()](/post/1160b0b5/)
-4. [[TODO] Array.prototype.reverse()](/post/26fb8b8d/)
-5. [[TODO ]Array.prototype.join()](/post/cf5b38ca/)
+1. [[TODO] String.prototype.split()](/programming/javascript/string/split.html)
+2. [[TODO] String.prototype.match()](/programming/javascript/string/match.html)
+3. [[TODO] Array.prototype.map()](/programming/javascript/array/map.html)
+4. [[TODO] Array.prototype.reverse()](/programming/javascript/array/reverse.html)
+5. [[TODO] Array.prototype.join()](/programming/javascript/array/join.html)
 
 <!-- more -->
 
