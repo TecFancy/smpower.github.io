@@ -78,7 +78,7 @@ export class AppComponent {
 
 ## 使用 `ngFor` 显示数组属性
 
-上面在 `app.component.html` 模板文件中显示了一个名为 `name` 的变量，如果要显示一个数组属性就要用到 `ngFor` [指令](/post/c268290c/)了。将 `name` 重定义为数组中的第一个名字：
+上面在 `app.component.html` 模板文件中显示了一个名为 `name` 的变量，如果要显示一个数组属性就要用到 `ngFor` [指令](/programming/angular/directive.html)了。将 `name` 重定义为数组中的第一个名字：
 
 ``` TypeScript
 export class AppComponent {

@@ -1,13 +1,7 @@
 ---
 title: Angular 指令 (directive)
-comments: true
-abbrlink: c268290c
 date: 2020-01-27 21:41:13
-tags:
-  - Angular
-  - Directive
-categories:
-  - [技术, Angular]
+comments: true
 ---
 
 一个可以修改 `DOM` 结构或修改 `DOM` 和组件数据模型中某些属性的类。 指令类的定义紧跟在 `@Directive()` 装饰器之后，以提供元数据。

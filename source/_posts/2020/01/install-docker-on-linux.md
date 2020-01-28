@@ -6,7 +6,6 @@ tags:
 categories:
   - Docker
 abbrlink: a9550548
-isShow: true
 date: 2020-01-18 23:48:21
 ---
 
@@ -42,10 +41,13 @@ Server:
 ```
 
 如果出现权限出错的问题，执行 `sudo docker version`。下面就让 Docker 跑起来吧：
+
 ``` bash
 docker run --name hello hello-world
 ```
+
 上面这句话的意思是启动一个名为 hello 的容器，该容器用到的镜像是 hello-world，当本地没有该竟像时，会先从 Docker 官方仓库下载该镜像到本地，然后启动。不出意外会打印一下信息：
+
 ``` bash
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
@@ -70,8 +72,10 @@ For more examples and ideas, visit:
 ```
 
 假如，这里出现权限问题，仍然以 sudo 身份运行。如果相以当前登陆的用户运行 Docker 而不想在 run 一个容器时前面加上 sudo，可以通过一下办法来解决：
+
 ``` bash
 sudo gpasswd -a ${USER} docker  # 将当前用户加入 Docker 用户组
 sudo systemctl restart docker  # 重启 Docker 服务
 ```
+
 执行完毕以后，要重启计算机哦。至此，便顺利地把 Docker 安装上了， Happy Dockering
