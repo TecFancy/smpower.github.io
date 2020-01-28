@@ -1,12 +1,11 @@
 ---
 title: Linux 下安装 Docker
 tags:
-  - Docker
-  - Linux
 categories:
-  - Docker
+  - [技术, Docker]
 abbrlink: a9550548
 date: 2020-01-18 23:48:21
+comments: true
 ---
 
 安装 Docker 非常简单。任何一门编程语言，我们都是从 Hello World 开始，这里，我们的首要目标就是先把 Docker 跑起来。下面以 Ubuntu 为例看看我们是如何把 Docker 跑起来的。
@@ -14,11 +13,13 @@ date: 2020-01-18 23:48:21
 <!-- more -->
 
 Ubuntu 下安装 Docker 执行：
+
 ``` bash
 sudo apt-get install docker.io
 ```
 
 安装后，执行  `docker version` 查看版本：
+
 ``` bash
 Client:
   Version:           18.06.1-ce

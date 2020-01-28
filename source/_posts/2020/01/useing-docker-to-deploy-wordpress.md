@@ -1,12 +1,12 @@
 ---
-title: 使用 Docker 部署 WorkPress
+title: 使用 Docker 部署 WordPress
 tags:
-  - Docker
   - WordPress
 categories:
-  - Docker
+  - [技术, Docker]
 abbrlink: 11d50f65
 date: 2020-01-19 02:17:46
+comments: true
 ---
 
 Docker 是一个应用容器引擎，可以将应用运行时环境打包到一个容器中，打包后的容器可移植到任何一个 Linux 环境下运行，能有效避免繁琐的配置步骤，下面是使用 Docker 搭建 WordPress 博客的具体操作。
@@ -16,14 +16,17 @@ Docker 是一个应用容器引擎，可以将应用运行时环境打包到一�
 ## 安装 Docker
 
 以 Ubuntu 为例，安装 Docker 执行：
+
 ``` bash
 sudo apt-get install docker.io
 ```
+
 其他发行版或平台，请参考 [Docker 官网](https://docs.docker.com/)安装指南。
 
 ## 安装 WordPress 和 MySQL
 
 使用 WordPress 前需要先安装 MySQL 数据库，先将 MySQL 数据库镜像拉取到本地：
+
 ``` bash
 docker pull mysql:5.7
 ```
@@ -35,9 +38,11 @@ docker pull wordpress
 ```
 
 将 MySQL 和 WordPress 下载到本地后，首先开启 MySQL 服务：
+
 ``` bash
 docker run -d --name db.wordpress -e MYSQL_ROOT_PASSWORD=admin mysql:5.7
 ```
+
 `run`: 启动一个容器
 `-d`: 启动的容器在后台运行
 `--name`: 给启动的容器起个名字，这里叫做 db.wordpress

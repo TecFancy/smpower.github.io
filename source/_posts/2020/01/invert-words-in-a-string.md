@@ -3,9 +3,10 @@ title: 反转字符串中的单词
 tags:
   - 算法
 categories:
-  - JavaScript
+  - [技术, JavaScript]
 abbrlink: a669b1a7
 date: 2020-01-20 17:09:07
+comments: true
 ---
 
 ## 预备知识

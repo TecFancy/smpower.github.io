@@ -5,6 +5,7 @@ date: 2020-01-21 16:49:15
 tags:
 categories:
   - [技术, TypeScript]
+comments: true
 ---
 
 ## 布尔值

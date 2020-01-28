@@ -1,11 +1,11 @@
 ---
-title: Linux(Debian9)安装mariaDB后的初始设置
+title: Linux(Debian9) 安装 MariaDB 后的初始设置
 tags:
   - Linux
-  - Debian9
+  - Software
   - MariaDB
 categories:
-  - 笔记
+  - [How]
 abbrlink: a08c9071
 date: 2018-07-04 16:10:54
 ---

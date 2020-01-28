@@ -4,9 +4,10 @@ tags:
   - SSH
   - Github
 categories:
-  - 笔记
+  - [How]
 abbrlink: 7b4eb65d
 date: 2018-07-05 15:55:07
+comments: true
 ---
 
 ## 检查本地是否存在 SSH Key

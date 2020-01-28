@@ -1,13 +1,13 @@
 ---
-title: Install NVIDIA on Debian9
+title: Debian9 配置 NVIDIA 显卡
 tags:
   - Linux
-  - Debian9
-  - NVIDIA
+  - Software
 categories:
-  - 笔记
+  - [How]
 abbrlink: e925b6c5
 date: 2018-07-05 16:09:48
+comments: true
 ---
 
 Step 1: vi /etc/apt/source.list
