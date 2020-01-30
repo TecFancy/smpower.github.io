@@ -54,7 +54,59 @@ str.split([separator[, limit]]);
 
 ## 示例
 
-TODO
+### 使用 `split()`
+
+下面定义了一个函数：根据指定的分隔符将一个 `String` 对象分割成字符串数组。分割 `String` 对象后，该函数依次输出原始 `String` 对象信息，被指定的分隔符，数组元素的个数以及数组中所有的元素。
+
+``` JavaScript
+function splitString(stringToSplit, separator) {
+  const arrayOfString = stringToSplit.split(separator);
+  let elements = '';
+
+  console.log(`The original string is: "${stringToSplit}".`);
+  console.log(`The separator is: "${separator}".`);
+
+  for (let i = 0, len = arrayOfString.length; i < len; i++) {
+    elements += `${arrayOfString[i]} / `
+  }
+
+  console.log(`The array has ${arrayOfString.length} elements: ${elements}.`);
+}
+
+const tempestString = 'How are you! Where are you from?';
+const monthString = 'Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec';
+
+const space = ' ';
+const comma = ',';
+
+splitString(tempestString, space);
+splitString(tempestString);
+splitString(monthString, comma);
+```
+
+上例输出结果如下：
+
+``` none
+The original string is: "How are you! Where are you from?".
+The separator is: " ".
+The array has 7 elements: How / are / you! / Where / are / you / from? / .
+The original string is: "How are you! Where are you from?".
+The separator is: "undefined".
+The array has 1 elements: How are you! Where are you from? / .
+The original string is: "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec".
+The separator is: ",".
+The array has 12 elements: Jan / Feb / Mar / Apr / May / Jun / Jul / Aug / Sep / Oct / Nov / Dec / .
+```
+
+### TODO 移除 `String` 对象中的空格
+
+### TODO 限制返回值中分割的元素数量
+
+### TODO 靠[正则](/programming/javascript/regexp/)来分割 `String` 对象使结果中包含分割块
+
+### TODO 使用一个数组来作为分隔符
+
+### TODO 用 `split` 来颠倒字符串顺序
 
 ## 相关链接
 
