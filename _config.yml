@@ -114,10 +114,10 @@ symbols_count_time:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  repo: https://github.com/smpower/smpower.github.io #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
-  branch: master
-  # message: [message]
+# - type: git
+#   repo: https://github.com/smpower/smpower.github.io #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+#   branch: master
+#   message: [message]
 - type: git
   repo: https://git.coding.net/wruofei/wruofei.git
   branch: master
