@@ -1,5 +1,5 @@
 ---
-title: TODO String.prototype.split()
+title: String.prototype.split()
 comments: true
 date: 2020-01-28 22:17:33
 ---
@@ -99,6 +99,26 @@ The array has 12 elements: Jan / Feb / Mar / Apr / May / Jun / Jul / Aug / Sep /
 ```
 
 ### TODO 移除 `String` 对象中的空格
+
+下面的例子中，`split()` 方法会查找零个或多个空白字符紧挨着的分号（;），找到后，将其从 `String` 对象中移除，`nameList` 数组就是 `split()` 方法根据这个匹配模式返回的结果。
+
+``` JavaScript
+const names = 'Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand ';
+
+console.log(names);
+
+const regexp = /\s*(?:;|$)\s*/; // 查找零个或多个空白字符 | 零个或多个空白字符紧挨着的分号（;）
+const nameList = names.split(regexp);
+
+console.log(nameList);
+```
+
+下面的输出结果，第一行输出了原始的 `String` 对象，第二行输出的是应用 `split()` 方法后的结果：
+
+``` none
+Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand 
+[ "Harry Trump", "Fred Barney", "Helen Rigby", "Bill Abel", "Chris Hand", "" ]
+```
 
 ### TODO 限制返回值中分割的元素数量
 
