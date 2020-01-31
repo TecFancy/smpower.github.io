@@ -120,6 +120,10 @@ Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand
 [ "Harry Trump", "Fred Barney", "Helen Rigby", "Bill Abel", "Chris Hand", "" ]
 ```
 
+{% note info %}
+  这个例子中，`split()` 的 `separator` 使用了 [JavaScript 正则表达式](/programming/javascript/regexp/)作为匹配模式。
+{% endnote %}
+
 ### TODO 限制返回值中分割的元素数量
 
 ### TODO 靠[正则](/programming/javascript/regexp/)来分割 `String` 对象使结果中包含分割块
