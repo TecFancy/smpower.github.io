@@ -98,7 +98,7 @@ The separator is: ",".
 The array has 12 elements: Jan / Feb / Mar / Apr / May / Jun / Jul / Aug / Sep / Oct / Nov / Dec / .
 ```
 
-### TODO 移除 `String` 对象中的空格
+### 移除 `String` 对象中的空格
 
 下面的例子中，`split()` 方法会查找零个或多个空白字符紧挨着的分号（;），找到后，将其从 `String` 对象中移除，`nameList` 数组就是 `split()` 方法根据这个匹配模式返回的结果。
 
