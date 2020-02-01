@@ -127,3 +127,5 @@ deploy:
 - type: git
   repo: https://git.coding.net/wruofei/wruofei.git
   branch: master
+- type: baidu_url_submitter # 添加这里内容即可
+
