@@ -1,7 +1,11 @@
 ---
-title: 'Ubuntu18.04.1 解决 Error: ENOSPC: System limit for number of file watchers reached, ...'
+title: >-
+  Ubuntu18.04.1 解决 Error: ENOSPC: System limit for number of file watchers
+  reached, ...
+abbrlink: a49f12f
 tags:
 categories:
+  - [How]
 ---
 
 在 Ubuntu 等 Linux 系统中执行某系任务时，控制台若抛出以下错误信息：

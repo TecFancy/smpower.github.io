@@ -16,18 +16,13 @@ tags:
 
 花括号之间的文本通常是组件属性的名字。Angular 会把这个名字替换为响应组件属性的字符串值。
 
-{% tabs tab1,1 %}
-
-<!-- tab app.component.html -->
 ``` TypeScript app.component.html
 <p>{{ title }}</p>
 <div>
   <img src="{{ itemImageUrl }}">
 </div>
 ```
-<!-- endtab -->
 
-<!-- tab app.component.ts -->
 ``` TypeScript app.component.ts
 import { Component } from '@angular/core';
 
@@ -40,25 +35,17 @@ export class AppComponent {
   itemImageUrl: string = 'http://xxx.com/xxx.png';
 }
 ```
-<!-- endtab -->
-
-{% endtabs %}
 
 上面模板文件 `app.component.html` 中的插值文本 `title` 会把 `app.component.ts` 组件中的属性 `title` 的值渲染到 `p` 标签之间。同理，插值文本 `itemImageUrl` 也会将组件中对应属性值渲染到 `img` 标签的 `src` 属性上。
 
 如果插值文本是一个表达式，Angular 会先计算它的值，再将计算出的值赋值给元素或指令的属性。
 
-{% tabs tab2,1 %}
-
-<!-- tab app.component.html -->
-``` TypeScript
+``` TypeScript app.component.html
 <!-- "The sum of 1 + 1 is 2." -->
 <p>The sum of 1 + 1 is {{ 1 + 1 }}</p>
 ```
-<!-- endtab -->
 
-<!-- tab app.component.ts -->
-``` TypeScript
+``` TypeScript app.component.ts
 import { Component } from '@angular/core';
 
 @Component({
@@ -67,9 +54,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent { }
 ```
-<!-- endtab -->
-
-{% endtabs %}
 
 ### 模板表达式
 
@@ -87,17 +71,12 @@ export class AppComponent { }
 
 1. 引用组件属性
 
-    {% tabs tab3,1 %}
-
-    <!-- tab app.component.html -->
-    ``` TypeScript
+    ``` TypeScript app.component.html
     <h1>{{ title }}</h1>
     <img src="itemImageUrl">
     ```
-    <!-- endtab -->
 
-    <!-- tab app.component.ts -->
-    ``` TypeScript
+    ``` TypeScript app.component.ts
     import { Component } from '@angular/core';
 
     @Component({
@@ -109,32 +88,20 @@ export class AppComponent { }
       itemImageUrl: string = 'https://xxx.com/xxx.png';
     }
     ```
-    <!-- endtab -->
-
-    {% endtab %}
 
 2. 引用模板上下文属性
 
-    {% tabs tab4,1 %}
-
-    <!-- tab app.component.html (template input value) -->
-    ``` TypeScript
+    ``` TypeScript app.component.html(template input value)
     <ul>
       <li *ngFor="let customer of customers">{{ customer.name }}<li>
     </ul>
     ```
-    <!-- endtab -->
 
-    <!-- tab app.component.html (template reference value) -->
-    ``` TypeScript
+    ``` TypeScript app.component.html(template reference value)
     <label>Type something:
       <input #customInput>{{ customInput.value }}
     </label>
     ```
-    <!-- endtab -->
-
-    {% endtabs %}
-
 {% note info %}
   模板表达式不能引用全局命名空间中的任何东西，比如 `window` 或 `document`。它们也不能调用 `console.log` 或 `Math.max`。它们只能引用表达式上下文中的成员。
 {% endnote %}
