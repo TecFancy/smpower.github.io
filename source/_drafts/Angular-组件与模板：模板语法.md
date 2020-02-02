@@ -1,9 +1,9 @@
 ---
 title: Angular 组件与模板：模板语法
-permalink: Angular 组件与模板：模板语法
-tags:
+abbrlink: 25a99a83
 categories:
   - [技术, Angular]
+tags:
 ---
 
 ## 模板与插值表达式
@@ -16,7 +16,7 @@ categories:
 
 花括号之间的文本通常是组件属性的名字。Angular 会把这个名字替换为响应组件属性的字符串值。
 
-{% tabs tab1, 1 %}
+{% tabs tab1,1 %}
 
 <!-- tab app.component.html -->
 ``` TypeScript app.component.html
@@ -48,7 +48,7 @@ export class AppComponent {
 
 如果插值文本是一个表达式，Angular 会先计算它的值，再将计算出的值赋值给元素或指令的属性。
 
-{% tabs tab2, 1 %}
+{% tabs tab2,1 %}
 
 <!-- tab app.component.html -->
 ``` TypeScript
@@ -87,7 +87,7 @@ export class AppComponent { }
 
 1. 引用组件属性
 
-    {% tabs tab3, 1 %}
+    {% tabs tab3,1 %}
 
     <!-- tab app.component.html -->
     ``` TypeScript
@@ -115,7 +115,7 @@ export class AppComponent { }
 
 2. 引用模板上下文属性
 
-    {% tabs tab4, 1 %}
+    {% tabs tab4,1 %}
 
     <!-- tab app.component.html (template input value) -->
     ``` TypeScript
