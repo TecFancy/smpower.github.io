@@ -1,6 +1,7 @@
 ---
 title: Angular 组件与模板：模板语法
 abbrlink: 67ee979e
+keywords: [博客, 若非的博客, Angular, angular, Angular 组件与模板, angular 组件与模板, Angular 模板语法, angular 模板语法, Angular 组件, Angular 模板, angular 组件, angular 模板]
 categories:
   - [技术, Angular]
 tags:
@@ -127,4 +128,62 @@ export class AppComponent { }
   模板表达式不能引用全局命名空间中的任何东西，比如 `window` 或 `document`。它们也不能调用 `console.log` 或 `Math.max`。它们只能引用表达式上下文中的成员。
 {% endnote %}
 
-### 表达式使用指南
+## 模板语句
+
+模板语句用来响应由绑定目标（如 `HTML` 元素、组件或指令）触发的事件。
+
+``` HTML app.component.html
+<button (click)="deletePerson()">Delete person</button>
+```
+
+下列 `JavaScript` 语法在模板语句中是不被允许的：
+
+- `new` 运算符
+- 自增和自减运算符：`++` 和 `--`
+- 操作并赋值，例如： `+=` 和 `-=`
+- 位运算符 `|` 和 `&`
+
+{% note info %}
+  模板语法同样不能引用全局命名空间的任何东西。比如不能引用 `window` 或 `document`，也不能调用 `console.log` 或 `Math.max`。
+{% endnote %}
+
+``` HTML 模板上下文和组件上下文中变量名的优先级
+<button (click)="onSave($event)">Save</button>
+<button *ngFor="let person of persons" (click)="deletePerson(person)">{{ person.name }}</button>
+<form #personForm (ngSubmit)="onSubmit(heroForm)">...</form>
+```
+
+模板上下文中变量名的优先级高于组件上下文中的变量名。上面 `deletePerson(person)` 中， `person` 是一个模板输入变量，而不是组件中的 `person` 属性。
+
+模板语句中，常规的做法是函数调用或者属性赋值，要避免写复杂的模板语句。模板表达式也要遵循这个原则。
+
+## 绑定语法：概览
+
+`Angular` 提供了多种数据绑定方式。绑定类型可分为三类，按数据流向方向可分为：
+
+- 从**数据源到视图**
+- 从**视图到数据源**
+- 双向：**视图到数据源到视图**
+
+1. 单向，从数据源到视图
+    1. 绑定类型
+        - 插值
+        - 属性
+        - Attribute
+        - CSS 类
+        - 样式
+    2. 语法
+        - `{{ expression }}`
+        - `[target]="expression"`
+        - `bind-target="expression"`
+2. 单项，从视图到数据源
+    1. 绑定类型
+        - 事件
+    2. 语法
+        - `(target)="statement"`
+        - `on-target="statement"`
+3. 双向，从视图到数据源到视图
+    1. 绑定类型
+    2. 语法
+        - `[(target)]="expression"`
+        - `bindon-target="expression"`
