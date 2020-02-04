@@ -166,24 +166,147 @@ export class AppComponent { }
 - 双向：**视图到数据源到视图**
 
 1. 单向，从数据源到视图
+
     1. 绑定类型
+
         - 插值
         - 属性
         - Attribute
         - CSS 类
         - 样式
+
     2. 语法
+
         - `{{ expression }}`
         - `[target]="expression"`
         - `bind-target="expression"`
+
 2. 单项，从视图到数据源
+
     1. 绑定类型
+
         - 事件
+
     2. 语法
+
         - `(target)="statement"`
         - `on-target="statement"`
+
 3. 双向，从视图到数据源到视图
+
     1. 绑定类型
+
     2. 语法
+
         - `[(target)]="expression"`
         - `bindon-target="expression"`
+
+## 绑定类型与绑定目标
+
+数据绑定的目标是 `DOM` 中的对象。根据绑定类型，该目标可以是 `Property` 名（元素、组件或指令的）、事件名（元素、组件或指令的），有时是 `Attribute` 名。下面总结了不同绑定类型的目标：
+
+1. 绑定属性
+
+    - 目标
+
+        元素的 `property`
+        组件的 `property`
+        指令的 `property`
+
+    - 范例
+
+        下面的属性分别是 `DOM` 元素属性 `src`、组件属性 `person` 和指令属性 `ngClass`。
+
+        ``` HTML
+        <img [src]="personImageUrl">
+        <app-person-detail [person]="currentPerson"></app-person-detail>
+        <div [ngClass]="{'special': isSpecial}"></div>
+        ```
+
+2. 绑定事件
+
+    - 目标
+
+        元素的事件
+        组件的事件
+        指令的事件
+
+    - 范例
+
+    下面的事件分别是 `DOM` 元素事件、组件的事件和指令事件。
+
+    ``` HTML
+    <button (click)="onSave()">Save</button>
+    <app-person-detail (deleteRequest)="deletePerson()"></app-person-detail>
+    <div (myClick)="clicked=$event" clickable>Click me</div>
+    ```
+
+3. 双向绑定
+
+    - 目标
+
+        事件与 `property`
+
+    - 范例
+
+        ``` HTML
+        <input [(ngModel)]="name">
+        ```
+
+4. 绑定 `Attribute`
+
+    - 目标
+
+        `attribute` （例外情况）
+
+    - 范例
+
+        ``` HTML
+        <button [attr.aria-label]="help">help</button>
+        ```
+
+5. 绑定 `CSS` 类
+
+    - 目标
+
+        `class property`
+
+    - 范例
+
+        ``` HTML
+        <div [class.special]="isSpecial">Special</div>
+        ```
+
+6. 绑定样式
+
+    - 目标
+
+        `style property`
+
+    - 范例
+
+        ``` HTML
+        <button [style.color]="isSpecial ? 'red' : 'green'">
+        ```
+
+## `Property` 绑定 `[property]`
+
+使用 `Property` 绑定到目标元素或指令 `@Input()` 装饰器的 `set` 型属性。
+
+### 单向**输入**
+
+### 例子
+
+### 绑定目标
+
+### 消除副作用
+
+### 返回正确的类型
+
+### 别忘了方括号
+
+### 一次性字符串初始化
+
+### 属性绑定与插值
+
+### 内容安全
