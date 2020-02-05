@@ -6,6 +6,10 @@ keywords:
   - 若非的博客
   - 技术博客
   - 空间周边
+  - 技术
+  - JavaScript
+  - 设计模式
+  - 单例模式
 categories:
   - - 技术
     - 设计模式
