@@ -1,8 +1,10 @@
 ---
 title: Linux 下安装 Docker
 tags:
+  - Docker
 categories:
-  - [技术, Docker]
+  - - VM
+    - Docker
 abbrlink: a9550548
 date: 2020-01-18 23:48:21
 comments: true

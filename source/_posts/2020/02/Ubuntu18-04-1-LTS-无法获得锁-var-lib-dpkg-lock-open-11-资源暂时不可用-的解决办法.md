@@ -2,6 +2,8 @@
 title: 'Ubuntu18.04.1 LTS - 无法获得锁  /var/lib/dpkg/lock - open (11: 资源暂时不可用)的解决办法'
 comments: true
 tags:
+  - How
+  - Linux
   - Ubuntu
 categories:
   - - How

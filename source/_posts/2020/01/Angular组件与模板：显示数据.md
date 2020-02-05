@@ -4,8 +4,11 @@ comments: true
 abbrlink: 9897f818
 date: 2020-01-27 16:46:25
 tags:
+  - Angular
+  - TypeScript
 categories:
-  - [技术, Angular]
+  - - 前端开发
+    - Angular
 ---
 
 在 Angular 应用中，可以通过把 HTML 模板中的控件绑定到 Angular 组件的属性来显示数据。

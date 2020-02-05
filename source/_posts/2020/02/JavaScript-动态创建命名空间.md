@@ -2,18 +2,12 @@
 title: JavaScript 动态创建命名空间 
 comments: true
 categories:
-  - - 技术
+  - - 前端开发
     - JavaScript
-keywords:
-  - 博客
-  - 若非的博客
-  - 技术博客
-  - 空间周边
-  - 技术
-  - JavaScript
 abbrlink: d4abee5a
 date: 2020-02-05 12:51:36
 tags:
+  - JavaScript
 ---
 
 ``` JavaScript

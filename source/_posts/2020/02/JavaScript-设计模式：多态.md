@@ -1,23 +1,15 @@
 ---
 title: JavaScript 设计模式：多态
 comments: true
-categories:
-  - - 技术
-    - JavaScript
-  - - 技术
-    - 设计模式
-keywords:
-  - 博客
-  - 若非的博客
-  - 技术博客
-  - 空间周边
-  - 技术
+tags:
   - JavaScript
   - 设计模式
   - 多态
+categories:
+  - - 前端开发
+    - 设计模式
 abbrlink: 80c83555
 date: 2020-02-05 12:58:38
-tags:
 ---
 
 

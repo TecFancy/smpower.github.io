@@ -1,23 +1,15 @@
 ---
 title: JavaScript 设计模式：通用的单例模式 
 comments: true
-keywords:
-  - 博客
-  - 若非的博客
-  - 技术博客
-  - 空间周边
-  - 技术
-  - JavaScript
-  - 设计模式
-  - 单例模式
 categories:
-  - - 技术
+  - - 前端开发
     - 设计模式
-  - - 技术
-    - JavaScript
 abbrlink: ae6965e
 date: 2020-02-05 12:25:22
 tags:
+  - JavaScript
+  - 设计模式
+  - 单例模式
 ---
 
 

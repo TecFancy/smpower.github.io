@@ -3,15 +3,11 @@ title: 三分钟上手 SuperMemo
 comments: true
 tags:
   - Software
-  - SuperMemo18
+  - SuperMemo
+  - SuperMemo 18
 categories:
-  - SuperMemo
-keywords:
-  - SuperMemo
-  - 博客
-  - 若非的博客
-  - 技术博客
-  - 空间周边
+  - - 知识管理
+    - SuperMemo
 abbrlink: 47b66633
 date: 2020-02-05 16:43:42
 ---

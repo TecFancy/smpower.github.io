@@ -3,8 +3,10 @@ title: TypeScript 基础类型
 abbrlink: 1e6a6145
 date: 2020-01-21 16:49:15
 tags:
+  - TypeScript
 categories:
-  - [技术, TypeScript]
+  - - 前端开发
+    - TypeScript
 comments: true
 ---
 
