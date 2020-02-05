@@ -2,9 +2,11 @@
 title: Debian9 配置 NVIDIA 显卡
 tags:
   - Linux
+  - Debian9
   - Software
 categories:
-  - [How]
+  - - How
+    - Debian
 abbrlink: e925b6c5
 date: 2018-07-05 16:09:48
 comments: true

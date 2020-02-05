@@ -4,7 +4,8 @@ tags:
   - SSH
   - Github
 categories:
-  - [How]
+  - - How
+    - Github
 abbrlink: 7b4eb65d
 date: 2018-07-05 15:55:07
 comments: true

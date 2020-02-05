@@ -2,9 +2,11 @@
 title: Debian9 安装 Lantern
 tags:
   - Linux
+  - Debian9
   - Software
 categories:
-  - [How]
+  - - How
+    - Debian
 abbrlink: 8cb8163
 date: 2018-07-05 16:08:01
 comments: true
