@@ -6,8 +6,8 @@ tags:
   - 设计模式
   - 多态
 categories:
-  - - 前端开发
-    - 设计模式
+  - - 设计模式
+    - JavaScript
 abbrlink: 80c83555
 date: 2020-02-05 12:58:38
 ---

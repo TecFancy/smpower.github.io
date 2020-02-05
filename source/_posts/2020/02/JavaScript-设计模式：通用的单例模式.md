@@ -2,8 +2,8 @@
 title: JavaScript 设计模式：通用的单例模式 
 comments: true
 categories:
-  - - 前端开发
-    - 设计模式
+  - - 设计模式
+    - JavaScript
 abbrlink: ae6965e
 date: 2020-02-05 12:25:22
 tags:
