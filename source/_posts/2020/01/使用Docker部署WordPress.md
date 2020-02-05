@@ -3,7 +3,8 @@ title: 使用 Docker 部署 WordPress
 tags:
   - WordPress
 categories:
-  - [技术, Docker]
+  - - VM
+    - Docker
 abbrlink: 11d50f65
 date: 2020-01-19 02:17:46
 comments: true
