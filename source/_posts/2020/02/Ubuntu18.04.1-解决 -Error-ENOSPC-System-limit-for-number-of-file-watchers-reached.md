@@ -21,14 +21,16 @@ Error: ENOSPC: System limit for number of file watchers reached, ...
 说明当前系统最大监听文件数太小而导致的，解决方法是增加当前系统最大监听文件数量。
 
 ``` bash
-$ sudo sysctl fs.inotify.max_user_watches=524288
-$ sudo sysctl -p
+sudo sysctl fs.inotify.max_user_watches=524288
+sudo sysctl -p
 ```
 
 {% note info %}
+
 获取当前系统监听文件数量：
 
 ``` bash
-$ cat /proc/sys/fs/inotify/max_user_watches
+cat /proc/sys/fs/inotify/max_user_watches
 ```
+
 {% endnote %}
