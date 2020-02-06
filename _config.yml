@@ -127,7 +127,7 @@ lazyload:
 tag_cloud:
   textFont: Trebuchet MS, Helvetica
   textColor: '#555'
-  textHeight: 25
+  textHeight: 22
   outlineColor: '#E2E1D1'
   maxSpeed: 0.1
 
