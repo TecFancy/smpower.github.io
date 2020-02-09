@@ -1,3 +1,6 @@
 [submodule "themes/next"]
 	path = themes/next
 	url = https://github.com/smpower/hexo-theme.next.config.git
+[submodule "source/_supermemo"]
+	path = source/_supermemo
+	url = https://github.com/smpower/supermemo.git
