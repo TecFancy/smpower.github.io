@@ -5,6 +5,7 @@ tags:
 categories:
   - - 前端开发
     - JavaScript
+abbrlink: a669f243
 ---
 
 ## 定义类
