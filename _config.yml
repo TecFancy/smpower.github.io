@@ -142,8 +142,17 @@ deploy:
 #   repo: https://github.com/smpower/smpower.github.io #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
 #   branch: master
 #   message: [message]
-- type: git
-  repo: https://git.coding.net/wruofei/wruofei.git
-  branch: master
+# - type: git
+#   repo: https://git.coding.net/wruofei/wruofei.git
+#   branch: master
 - type: baidu_url_submitter # 添加这里内容即可
-
+- type: ftpsync
+    host: ruofei.site
+    user: root
+    pass: Yuqian521!!
+    remote: /data/www/default
+    port: 22
+    ignore:
+    connections: 1
+    verbose: true
+    
