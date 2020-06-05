@@ -60,7 +60,3 @@ code --install-extension ./MS-CEINTL.vscode-language-pack-zh-hans-1.46.0.vsix
 ----
 
 > 文章首发于微信公众号【iCoder】，欢迎关注 ^_^
-
-<div style="display: flex; justify-content: center; align-items: center; padding: 20px;">
-  <img src="https://sm.ms/image/2gANji1PqbCRVZJ">
-</div>
