@@ -21,33 +21,33 @@ categories:
 
 下面我们以安装简体中文语言包为例。访问 vscode 插件市场（[https://marketplace.visualstudio.com](https://marketplace.visualstudio.com)），搜索 chinese 找到我们需要的简体中文语言包。
 
-![](https://i.loli.net/2020/06/05/3PMAIxut5jGFJmn.png)
+![VSCode 插件市场](https://i.loli.net/2020/06/05/3PMAIxut5jGFJmn.png)
 
 上面红框中的结果就是我们要的简体中文语言包扩展文件。点进去，在页面右侧有一个 **Download Extension** 按钮，点击这里下载中文语言包文件。
 
-![](https://i.loli.net/2020/06/05/c3IzVuEWLvtjpOD.jpg)
+![简体中文语言包](https://i.loli.net/2020/06/05/c3IzVuEWLvtjpOD.jpg)
 
 确认下载的文件是否是以 .vsix 为扩展的文件。
 
-![](https://i.loli.net/2020/06/05/wqUxcoQNrVhGjuR.png)
+![扩展文件](https://i.loli.net/2020/06/05/wqUxcoQNrVhGjuR.png)
 
 ## 离线安装扩展
 
 将扩展文件放到 vscode 安装目录下的 bin 目录。windows 下的 bin 目录很好找，在 vscode 安装目录下一眼就可以找到：
 
-![](https://i.loli.net/2020/06/05/hw9AdX5Lsex83yQ.png)
+![Windows 下 bin 目录位置](https://i.loli.net/2020/06/05/hw9AdX5Lsex83yQ.png)
 
 对于 mac 用户来说，要找到 bin 目录要稍微麻烦一点。打开 Finder，找到 vscode 应用程序，双指轻按触控板，选择弹出框的 显示包内容 选项。
 
-![](https://i.loli.net/2020/06/05/fW6Y3eXvyBxpcqE.png)
+![Mac 下显示包内容](https://i.loli.net/2020/06/05/fW6Y3eXvyBxpcqE.png)
 
 依次打开 Contents -> Resources -> app 即可找到 bin 目录：
 
-![](https://i.loli.net/2020/06/05/FcqagUehb13zJGl.png)
+![Mac 下 bin 目录位置](https://i.loli.net/2020/06/05/FcqagUehb13zJGl.png)
 
 我们看到 bin 目录下有一个名为 code 的可执行文件，我们需要在命令行工具中执行这个可执行文件。随便找个命令行工具，比如 windows 的 cmd 或者 mac 的 item 都可以，在命令行工具中 cd 到 bin 目录：
 
-![](https://i.loli.net/2020/06/05/irqcvsBgH1aItw2.png)
+![终端执行命令](https://i.loli.net/2020/06/05/irqcvsBgH1aItw2.png)
 
 在命令行中执行以下命令：
 
