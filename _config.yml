@@ -123,8 +123,8 @@ baidu_url_submit:
 
 # 图片懒加载
 lazyload:
-  enable: true
-  onlypost: false
+  enable: false
+  onlypost: true
   # loadingImg:
 
 # hexo-tag-cloud 标签云 | see https://github.com/MikeCoder/hexo-tag-cloud
