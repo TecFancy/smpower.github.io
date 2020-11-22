@@ -55,7 +55,3 @@ code --install-extension ./MS-CEINTL.vscode-language-pack-zh-hans-1.46.0.vsix
 ```
 
 到这里我们就成功安装上简体中文离线扩展包文件啦～ 安装其他扩展也是同样的步骤。遇到任何问题欢迎在下方留言讨论哦 ^_^
-
-----
-
-> 文章首发于微信公众号【iCoder】，欢迎关注 ^_^
