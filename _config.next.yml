@@ -264,10 +264,10 @@ tag_icon: false
 # Donate (Sponsor) settings
 # Front-matter variable (unsupport animation).
 reward_settings:
-  # If true, a donate button will be displayed in every article by default.
+  # If true, a donate butto☆*:.｡. o(≧▽≦)o .｡.:*☆n every article by default.
   enable: true
   animation: false
-  #comment: Buy me a coffee
+  comment: 请我吃个肉夹馍 🥙 好不啦 😘
 
 reward:
   wechatpay: /images/wechatpay.png
