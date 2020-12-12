@@ -574,7 +574,7 @@ comments:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: true
+  lazyload: false
   # Modify texts or order for any navs, here are some examples.
   nav:
     #disqus:
@@ -646,6 +646,15 @@ gitalk:
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
   language:
 
+# Utterances
+# For more information: https://utteranc.es
+utterances:
+  enable: true
+  repo: smpower/comment_hi-ruofei.com # Github repository name
+  # Available values: pathname | url | title | og:title
+  issue_term: pathname
+  # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
+  # theme: github-ligh
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services
