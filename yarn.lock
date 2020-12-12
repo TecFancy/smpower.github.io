@@ -191,6 +191,13 @@ ansi-styles@^2.2.1:
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
   integrity sha1-tDLdM1i2NM914eRmQ2gkBTPB3b4=
 
+ansi-styles@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
+  integrity sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
+  dependencies:
+    color-convert "^1.9.0"
+
 ansi-styles@^4.1.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
@@ -611,6 +618,15 @@ chalk@^1.1.3:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
+chalk@^2.4.1:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
+  integrity sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
+
 chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
@@ -712,6 +728,14 @@ cli-table@^0.3.1:
   dependencies:
     colors "1.0.3"
 
+cli-table@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/cli-table/-/cli-table-0.3.4.tgz#5b37fd723751f1a6e9e70d55953a75e16eab958e"
+  integrity sha512-1vinpnX/ZERcmE443i3SZTmU5DF0rPO9DrL4I2iVAllhxzCM9SzPlHnz19fsZB78htkKZvYBvj6SZ6vXnaxmTA==
+  dependencies:
+    chalk "^2.4.1"
+    string-width "^4.2.0"
+
 clipboard@^2.0.0:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.6.tgz#52921296eec0fdf77ead1749421b21c968647376"
@@ -755,12 +779,24 @@ collection-visit@^1.0.0:
     map-visit "^1.0.0"
     object-visit "^1.0.0"
 
+color-convert@^1.9.0:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
+  integrity sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
+  dependencies:
+    color-name "1.1.3"
+
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
   integrity sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
   dependencies:
     color-name "~1.1.4"
+
+color-name@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
+  integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
 color-name@~1.1.4:
   version "1.1.4"
@@ -1722,6 +1758,11 @@ has-ansi@^2.0.0:
   dependencies:
     ansi-regex "^2.0.0"
 
+has-flag@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
+  integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
+
 has-flag@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
@@ -2003,10 +2044,10 @@ hexo-server@^2.0.0:
     open "^7.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-next@^8.0.2:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.0.2.tgz#6f9ee15e231241c209ac2fe687b764ed00a926e7"
-  integrity sha512-rTqJoD0FNt6lVvU5MTfYVltNOIfOJSDjO3MdAYknPcOogtoqGu8UypiEz8bYwFNNwIRsFExJUl7IBsVrMlOR4Q==
+hexo-theme-next@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-theme-next/-/hexo-theme-next-8.1.0.tgz#fc12ef9e6f3fe33a2c3bbf972f1e546047e34cd4"
+  integrity sha512-msxTbPsu95UljHZGXxo/PSJMKOc9amBVgK4B2Yi4tLduOuEpOTCieLiOnfz1e7ywBYlmqS86oPxXrQXc6q9yiQ==
 
 hexo-util@^1.0.0:
   version "1.9.1"
@@ -3140,14 +3181,14 @@ npm-bundled@^1.1.1:
   dependencies:
     npm-normalize-package-bin "^1.0.1"
 
-npm-check-updates@^10.2.2:
-  version "10.2.2"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-10.2.2.tgz#2e4cad7eb8e42cdaeb95ec57873f2277cf75b6ff"
-  integrity sha512-xyE1PUTu4xarVDRXCA0HYd92rT3zd87GIixczM/TCkwN12/31yVD/8dOyXtgNA8fpIuvhjrfX7n4cV0OTCa9hg==
+npm-check-updates@^10.2.5:
+  version "10.2.5"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-10.2.5.tgz#d647febf6c8665cd26f11dbeeeaf2037cffc4442"
+  integrity sha512-R0BN+MqE6T12k0iGivF0WKfn3tuaeQuCai0haVvmsr7GcoPXU+yrlHxl9aFlO2XZ6z4m+pCd107YnbJDcRAf8Q==
   dependencies:
     chalk "^4.1.0"
     cint "^8.2.1"
-    cli-table "^0.3.1"
+    cli-table "^0.3.4"
     commander "^6.2.0"
     find-up "5.0.0"
     fp-and-or "^0.1.3"
@@ -3165,7 +3206,7 @@ npm-check-updates@^10.2.2:
     rc-config-loader "^3.0.0"
     remote-git-tags "^3.0.0"
     rimraf "^3.0.2"
-    semver "^7.3.2"
+    semver "^7.3.4"
     semver-utils "^1.1.4"
     spawn-please "^1.0.0"
     update-notifier "^5.0.1"
@@ -3928,6 +3969,13 @@ semver@^7.0.0, semver@^7.1.1, semver@^7.3.2:
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.2.tgz#604962b052b81ed0786aae84389ffba70ffd3938"
   integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
+semver@^7.3.4:
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.4.tgz#27aaa7d2e4ca76452f98d3add093a72c943edc97"
+  integrity sha512-tCfb2WLjqFAtXn4KEdxIhalnRtoKFN7nAwj0B3ZXCbQloV2tq5eDbcTmT68JJD3nRJq24/XgxtQKFIpQdtvmVw==
+  dependencies:
+    lru-cache "^6.0.0"
+
 send@0.17.1:
   version "0.17.1"
   resolved "https://registry.yarnpkg.com/send/-/send-0.17.1.tgz#c1d8b059f7900f7466dd4938bdc44e11ddb376c8"
@@ -4184,7 +4232,7 @@ string-width@^3.0.0:
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^5.1.0"
 
-string-width@^4.0.0, string-width@^4.1.0:
+string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.0.tgz#952182c46cc7b2c313d1596e623992bd163b72b5"
   integrity sha512-zUz5JD+tgqtuDjMhwIg5uFVV3dtqZ9yQJlZVfq4I01/K5Paj5UHj7VyrQOJvzawSVlKpObApbfD0Ed6yJc+1eg==
@@ -4292,6 +4340,13 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
+
+supports-color@^5.3.0:
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
+  integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
+  dependencies:
+    has-flag "^3.0.0"
 
 supports-color@^7.1.0:
   version "7.2.0"
